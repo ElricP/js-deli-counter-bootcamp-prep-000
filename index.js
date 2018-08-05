@@ -12,4 +12,9 @@ function nowServing(line){
   return `Currently serving ${first}.`;
 }
 
-function 
+function currentLine(line){
+  if (line.length == 0){
+    return "t"
+  }
+  var result = ""
+}
