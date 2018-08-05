@@ -18,7 +18,10 @@ function currentLine(line){
   }
   var result = "The line is currently:"
   for(var counter = 0; counter < line.length; counter++){
-    result += ` ${counter+1}. ${line[counter]}${counter==line.length-1 ?  : ","}`
-    
+    result += ` ${counter+1}. ${line[counter]}`;
+    if(counter != line.length -1){
+      result += ",";
+    }
   }
+  return result;
 }
