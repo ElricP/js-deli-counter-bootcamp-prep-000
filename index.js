@@ -16,5 +16,9 @@ function currentLine(line){
   if (line.length == 0){
     return "The line is currently empty."
   }
-  var result = "T"
+  var result = "The line is currently:"
+  for(var counter = 0; counter < line.length; counter++){
+    result += ` ${counter+1}. ${line[counter]}`
+    
+  }
 }
