@@ -9,5 +9,6 @@ function nowServing(line){
   }
   var first = line[0];
   line.shift();
-  return `
+  return `Currently serving ${first}.`;
 }
+
